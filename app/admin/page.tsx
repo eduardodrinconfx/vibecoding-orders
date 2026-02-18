@@ -59,7 +59,7 @@ export default function AdminDashboard() {
 
   if (status === 'loading') {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-food-pattern">
+      <div className="min-h-screen flex items-center justify-center ">
         <div className="text-center">
           <div className="space-y-3">
             <div className="h-6 w-40 rounded-lg animate-shimmer mx-auto"></div>
@@ -82,7 +82,7 @@ export default function AdminDashboard() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <span className="animate-float"><LayoutDashboard className="w-8 h-8" /></span>
+              <span className=""><LayoutDashboard className="w-8 h-8" /></span>
               <div>
                 <h1 className="text-2xl font-bold">Panel de Administración</h1>
                 <p className="text-sm text-muted-foreground">Bienvenido, {session?.user?.email}</p>
@@ -127,7 +127,7 @@ export default function AdminDashboard() {
               <CardTitle className="text-3xl">
                 {stats.pendingOrders}
                 {stats.pendingOrders > 0 && (
-                  <Badge variant="destructive" className="ml-2 animate-gentle-pulse">Activos</Badge>
+                  <Badge variant="destructive" className="ml-2 ">Activos</Badge>
                 )}
               </CardTitle>
             </CardHeader>

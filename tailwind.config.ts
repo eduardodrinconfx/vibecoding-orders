@@ -87,20 +87,12 @@ const config = {
           from: { opacity: "0", transform: "translateY(-12px)" },
           to: { opacity: "1", transform: "translateY(0)" },
         },
-        "gentle-pulse": {
-          "0%, 100%": { opacity: "1", transform: "scale(1)" },
-          "50%": { opacity: "0.85", transform: "scale(1.05)" },
-        },
         "bounce-once": {
           "0%": { transform: "scale(1)" },
           "30%": { transform: "scale(1.15)" },
           "50%": { transform: "scale(0.95)" },
           "70%": { transform: "scale(1.05)" },
           "100%": { transform: "scale(1)" },
-        },
-        "float": {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-6px)" },
         },
       },
       animation: {
@@ -111,9 +103,7 @@ const config = {
         "slide-in-left": "slide-in-left 0.5s ease-out both",
         "slide-in-right": "slide-in-right 0.5s ease-out both",
         "slide-down": "slide-down 0.4s ease-out both",
-        "gentle-pulse": "gentle-pulse 2s ease-in-out infinite",
         "bounce-once": "bounce-once 0.4s ease-out",
-        "float": "float 3s ease-in-out infinite",
       },
     },
   },

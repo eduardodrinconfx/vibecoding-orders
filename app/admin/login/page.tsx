@@ -42,10 +42,10 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-orange-50/80 to-amber-50/40 bg-food-pattern p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-orange-50/80 to-amber-50/40  p-4">
       <Card className="w-full max-w-md animate-scale-in">
         <CardHeader className="text-center">
-          <div className="mx-auto w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-500 rounded-full flex items-center justify-center mb-4 animate-float">
+          <div className="mx-auto w-12 h-12 bg-gradient-to-br from-orange-500 to-amber-500 rounded-full flex items-center justify-center mb-4 ">
             <Lock className="w-6 h-6 text-white" />
           </div>
           <CardTitle className="text-2xl">Panel de Administración</CardTitle>

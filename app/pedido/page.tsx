@@ -116,7 +116,7 @@ export default function PedidoPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-food-pattern">
+      <div className="min-h-screen flex items-center justify-center ">
         <div className="text-center">
           <div className="space-y-3">
             <div className="h-6 w-40 rounded-lg animate-shimmer mx-auto"></div>
@@ -129,7 +129,7 @@ export default function PedidoPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50/80 to-amber-50/40 bg-food-pattern">
+    <div className="min-h-screen bg-gradient-to-b from-orange-50/80 to-amber-50/40 ">
       {/* Header */}
       <header className="border-b bg-background/95 backdrop-blur sticky top-0 z-50 animate-slide-down">
         <div className="container mx-auto px-4 py-4">
@@ -148,7 +148,7 @@ export default function PedidoPage() {
         </div>
       </header>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Menu Items */}
           <div className="lg:col-span-2 animate-fade-in-up">

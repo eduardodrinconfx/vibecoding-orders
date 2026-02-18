@@ -42,7 +42,7 @@ export default function MenusPage() {
 
   if (status === 'loading') {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-food-pattern">
+      <div className="min-h-screen flex items-center justify-center ">
         <div className="space-y-3 text-center">
           <div className="h-6 w-40 rounded-lg animate-shimmer mx-auto"></div>
           <div className="h-4 w-28 rounded animate-shimmer mx-auto stagger-2"></div>
@@ -94,7 +94,7 @@ export default function MenusPage() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-3">
                     <div className="p-2 bg-primary/10 rounded-lg">
-                      <span className="animate-float inline-block">{getMenuIcon(menuData.menu.type)}</span>
+                      <span className=" inline-block">{getMenuIcon(menuData.menu.type)}</span>
                     </div>
                     <div>
                       <CardTitle>{menuData.menu.name}</CardTitle>

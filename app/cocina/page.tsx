@@ -80,7 +80,7 @@ export default function CocinaPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-food-pattern">
+      <div className="min-h-screen flex items-center justify-center ">
         <div className="text-center">
           <div className="space-y-3">
             <div className="h-6 w-44 rounded-lg animate-shimmer mx-auto"></div>
@@ -99,7 +99,7 @@ export default function CocinaPage() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <span className="animate-float"><ChefHat className="w-8 h-8" /></span>
+              <span className=""><ChefHat className="w-8 h-8" /></span>
               <div>
                 <h1 className="text-2xl font-bold">Vista de Cocina</h1>
                 <p className="text-sm text-muted-foreground">
@@ -121,7 +121,7 @@ export default function CocinaPage() {
             <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
               <Clock className="w-5 h-5" />
               Pendientes
-              <Badge variant="secondary" className={pendingOrders.length > 0 ? 'animate-gentle-pulse' : ''}>
+              <Badge variant="secondary" className={pendingOrders.length > 0 ? '' : ''}>
                 {pendingOrders.length}
               </Badge>
             </h2>
@@ -178,7 +178,7 @@ export default function CocinaPage() {
             <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
               <ChefHat className="w-5 h-5" />
               En Proceso
-              <Badge className={inProgressOrders.length > 0 ? 'animate-gentle-pulse' : ''}>
+              <Badge className={inProgressOrders.length > 0 ? '' : ''}>
                 {inProgressOrders.length}
               </Badge>
             </h2>
