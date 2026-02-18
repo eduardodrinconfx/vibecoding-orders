@@ -1,6 +1,9 @@
-import { Menu, MenuItem, Category, Order, MenuType, OrderStatus } from '@prisma/client'
+import { Menu, MenuItem, Category, Order } from '@prisma/client'
 
-export type { Menu, MenuItem, Category, Order, MenuType, OrderStatus }
+export type { Menu, MenuItem, Category, Order }
+
+export type MenuType = 'CAFETERIA' | 'RESTAURANTE' | 'PREMIUM'
+export type OrderStatus = 'PENDING' | 'IN_PROGRESS' | 'COMPLETED' | 'CANCELLED'
 
 export interface MenuWithItems extends Menu {
   items: MenuItem[]
