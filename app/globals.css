@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 50% 98%;
+    --foreground: 20 20% 10%;
+    --card: 36 50% 99%;
+    --card-foreground: 20 20% 10%;
+    --popover: 36 50% 99%;
+    --popover-foreground: 20 20% 10%;
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 30 30% 93%;
+    --secondary-foreground: 20 20% 15%;
+    --muted: 30 20% 94%;
+    --muted-foreground: 20 10% 45%;
+    --accent: 35 80% 92%;
+    --accent-foreground: 20 20% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 25 95% 53%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ===== Keyframes ===== */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gentle-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes bounce-once {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.15); }
+  50% { transform: scale(0.95); }
+  70% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* ===== Utility classes ===== */
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fade-in-up 0.5s ease-out both;
+  }
+  .animate-scale-in {
+    animation: scale-in 0.4s ease-out both;
+  }
+  .animate-slide-in-left {
+    animation: slide-in-left 0.5s ease-out both;
+  }
+  .animate-slide-in-right {
+    animation: slide-in-right 0.5s ease-out both;
+  }
+  .animate-slide-down {
+    animation: slide-down 0.4s ease-out both;
+  }
+  .animate-gentle-pulse {
+    animation: gentle-pulse 2s ease-in-out infinite;
+  }
+  .animate-bounce-once {
+    animation: bounce-once 0.4s ease-out;
+  }
+  .animate-shimmer {
+    background: linear-gradient(90deg, hsl(var(--muted)) 25%, hsl(var(--accent)) 50%, hsl(var(--muted)) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s ease-in-out infinite;
+  }
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Stagger delays */
+  .stagger-1 { animation-delay: 0.05s; }
+  .stagger-2 { animation-delay: 0.10s; }
+  .stagger-3 { animation-delay: 0.15s; }
+  .stagger-4 { animation-delay: 0.20s; }
+  .stagger-5 { animation-delay: 0.25s; }
+  .stagger-6 { animation-delay: 0.30s; }
+  .stagger-7 { animation-delay: 0.35s; }
+  .stagger-8 { animation-delay: 0.40s; }
+  .stagger-9 { animation-delay: 0.45s; }
+
+  /* Food pattern background */
+  .bg-food-pattern {
+    background-image: radial-gradient(circle, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
