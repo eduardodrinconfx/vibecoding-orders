@@ -48,7 +48,7 @@ export default function CocinaPage() {
     }
   }
 
-  const getStatusBadge = (status: OrderStatus) => {
+  const getStatusBadge = (status: string) => {
     switch (status) {
       case 'PENDING':
         return <Badge variant="secondary"><Clock className="w-3 h-3 mr-1" />Pendiente</Badge>
@@ -61,7 +61,7 @@ export default function CocinaPage() {
     }
   }
 
-  const getStatusColor = (status: OrderStatus) => {
+  const getStatusColor = (status: string) => {
     switch (status) {
       case 'PENDING':
         return 'border-l-4 border-l-yellow-500'
